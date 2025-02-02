@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Django-related
+*.log
+*.sqlite3
+db.sqlite3
+
+# Environment variables
+.env
+.env.local
+*.secret
+
+# Migrations (optional, if you don't want to track them initially)
+**/migrations/*
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if using frontend dependencies)
+node_modules/
