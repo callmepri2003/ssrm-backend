@@ -1,0 +1,1 @@
+web: gunicorn ssrmBackend.wsgi --log-file -
