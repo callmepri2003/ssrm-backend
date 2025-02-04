@@ -28,3 +28,5 @@ db.sqlite3
 
 # Node modules (if using frontend dependencies)
 node_modules/
+
+.env

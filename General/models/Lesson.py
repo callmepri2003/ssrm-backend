@@ -12,8 +12,8 @@ class Lesson(models.Model):
         ('paid', 'Paid'),
 
     ]
-    group = models.ForeignKey(Group, related_name="lessonHistory", on_delete=models.PROTECT)
-    tutor = models.ForeignKey(Tutor, related_name="lessonHistory", on_delete=models.PROTECT)
+    group = models.ForeignKey(Group, related_name="lessonHistory", on_delete=models.CASCADE)
+    tutor = models.ForeignKey(Tutor, related_name="lessonHistory", on_delete=models.CASCADE)
     dateTime = models.DateTimeField()
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='scheduled')
     comments = models.TextField()

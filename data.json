@@ -1,0 +1,1979 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "tutor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "availability"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "resource"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "student"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "attendance"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "lesson"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "enrolment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "General",
+    "model": "reporting"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f88sv1hazr5g5d4w0kt9hxfrvjkyfs6u",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnY-EtJzxms3fUaB5AtxUmFuDtESgHtm5n3EgnWpaZ18JymLM5CicPvhkAPbhvId2i3Lqm3ZZ5Qborc6ZDXnvl52d2_gwqjfmvPkYGQNSoD_mjJBWSfWUUowXll0eaiI7pwQtKmeAzRGEdQSGnlvHh_AAlOOHI:1tdFRA:JJAVFI3nAV31Gm0Cmvd6EKLsqVVuH9-1-Fs_R3uRGs8",
+    "expire_date": "2025-02-12T21:17:28.738Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kphgwvd3vnvgtypwz5amm4cwjfhdx1qp",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnY-EtJzxms3fUaB5AtxUmFuDtESgHtm5n3EgnWpaZ18JymLM5CicPvhkAPbhvId2i3Lqm3ZZ5Qborc6ZDXnvl52d2_gwqjfmvPkYGQNSoD_mjJBWSfWUUowXll0eaiI7pwQtKmeAzRGEdQSGnlvHh_AAlOOHI:1te1jC:5GGSwMkyu3syEiJ4MGbw4dAxIXw7HxPBwbuhDhyhFPU",
+    "expire_date": "2025-02-15T00:51:18.663Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vl6hh7nkfv5533vjvtqznrlvue7cmyy0",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAKQ2lduvcMZIaZStVAUtqV8e7apAvd_vfef6mI25rj1mSJM6uz6tXpdyNMDyk74DuWW9WplnWZSe-KPmjT18ryvBzu30HGlr91kNQZCkKE3oF1zgOPvREwRhDBeMc-cJoGoSnwaIE7Sc4yCgOSGdT7A_MMOKw:1tePIQ:6YGi772BzImKwyAPaSrVipQ0URLcHeQWnRBVY2FST3k",
+    "expire_date": "2025-02-16T02:01:14.819Z"
+  }
+},
+{
+  "model": "General.group",
+  "pk": 2,
+  "fields": {
+    "cost": 40.0,
+    "tutor": 2,
+    "year": "3",
+    "subject": "jnr",
+    "lesson_type": "private",
+    "notes": "Ryan has ADHD"
+  }
+},
+{
+  "model": "General.group",
+  "pk": 4,
+  "fields": {
+    "cost": 0.0,
+    "tutor": 4,
+    "year": "11",
+    "subject": "adv",
+    "lesson_type": "private",
+    "notes": "This is through George"
+  }
+},
+{
+  "model": "General.group",
+  "pk": 5,
+  "fields": {
+    "cost": 0.0,
+    "tutor": 4,
+    "year": "11",
+    "subject": "adv",
+    "lesson_type": "private",
+    "notes": "This is also through George"
+  }
+},
+{
+  "model": "General.lesson",
+  "pk": 2,
+  "fields": {
+    "group": 2,
+    "tutor": 2,
+    "dateTime": "2025-01-26T02:00:00Z",
+    "status": "paid",
+    "comments": "."
+  }
+},
+{
+  "model": "General.lesson",
+  "pk": 3,
+  "fields": {
+    "group": 2,
+    "tutor": 2,
+    "dateTime": "2025-01-16T12:00:00Z",
+    "status": "paid",
+    "comments": "Thursday this week cause holiday."
+  }
+},
+{
+  "model": "General.lesson",
+  "pk": 4,
+  "fields": {
+    "group": 2,
+    "tutor": 2,
+    "dateTime": "2025-02-09T12:00:00Z",
+    "status": "paid",
+    "comments": "First lesson."
+  }
+},
+{
+  "model": "General.lesson",
+  "pk": 5,
+  "fields": {
+    "group": 2,
+    "tutor": 2,
+    "dateTime": "2025-02-02T02:07:34Z",
+    "status": "completed",
+    "comments": "Ryan had some trouble understanding"
+  }
+},
+{
+  "model": "General.attendance",
+  "pk": 2,
+  "fields": {
+    "student": 3,
+    "lesson": 2,
+    "trial": true
+  }
+},
+{
+  "model": "General.attendance",
+  "pk": 3,
+  "fields": {
+    "student": 3,
+    "lesson": 3,
+    "trial": true
+  }
+},
+{
+  "model": "General.attendance",
+  "pk": 4,
+  "fields": {
+    "student": 3,
+    "lesson": 4,
+    "trial": true
+  }
+},
+{
+  "model": "General.attendance",
+  "pk": 5,
+  "fields": {
+    "student": 3,
+    "lesson": 5,
+    "trial": true
+  }
+},
+{
+  "model": "General.reporting",
+  "pk": 1,
+  "fields": {
+    "unique": "u"
+  }
+},
+{
+  "model": "General.enrolment",
+  "pk": 2,
+  "fields": {
+    "group": 2,
+    "student": 3,
+    "enrolmentCost": 60.0
+  }
+},
+{
+  "model": "General.enrolment",
+  "pk": 4,
+  "fields": {
+    "group": 4,
+    "student": 5,
+    "enrolmentCost": 30.0
+  }
+},
+{
+  "model": "General.enrolment",
+  "pk": 5,
+  "fields": {
+    "group": 5,
+    "student": 6,
+    "enrolmentCost": 30.0
+  }
+},
+{
+  "model": "General.availability",
+  "pk": 1,
+  "fields": {
+    "tutor": 1,
+    "day": "monday",
+    "start_time": "00:00:00",
+    "end_time": "00:00:00"
+  }
+},
+{
+  "model": "General.availability",
+  "pk": 2,
+  "fields": {
+    "tutor": 3,
+    "day": "thursday",
+    "start_time": "02:02:10",
+    "end_time": "02:02:12"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add tutor",
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "codename": "add_tutor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change tutor",
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "codename": "change_tutor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete tutor",
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "codename": "delete_tutor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view tutor",
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "codename": "view_tutor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add availability",
+    "content_type": [
+      "General",
+      "availability"
+    ],
+    "codename": "add_availability"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change availability",
+    "content_type": [
+      "General",
+      "availability"
+    ],
+    "codename": "change_availability"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete availability",
+    "content_type": [
+      "General",
+      "availability"
+    ],
+    "codename": "delete_availability"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view availability",
+    "content_type": [
+      "General",
+      "availability"
+    ],
+    "codename": "view_availability"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add resource",
+    "content_type": [
+      "General",
+      "resource"
+    ],
+    "codename": "add_resource"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change resource",
+    "content_type": [
+      "General",
+      "resource"
+    ],
+    "codename": "change_resource"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete resource",
+    "content_type": [
+      "General",
+      "resource"
+    ],
+    "codename": "delete_resource"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view resource",
+    "content_type": [
+      "General",
+      "resource"
+    ],
+    "codename": "view_resource"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add student",
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "codename": "add_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change student",
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "codename": "change_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete student",
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "codename": "delete_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view student",
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "codename": "view_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add attendance",
+    "content_type": [
+      "General",
+      "attendance"
+    ],
+    "codename": "add_attendance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change attendance",
+    "content_type": [
+      "General",
+      "attendance"
+    ],
+    "codename": "change_attendance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete attendance",
+    "content_type": [
+      "General",
+      "attendance"
+    ],
+    "codename": "delete_attendance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view attendance",
+    "content_type": [
+      "General",
+      "attendance"
+    ],
+    "codename": "view_attendance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add lesson",
+    "content_type": [
+      "General",
+      "lesson"
+    ],
+    "codename": "add_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change lesson",
+    "content_type": [
+      "General",
+      "lesson"
+    ],
+    "codename": "change_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete lesson",
+    "content_type": [
+      "General",
+      "lesson"
+    ],
+    "codename": "delete_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view lesson",
+    "content_type": [
+      "General",
+      "lesson"
+    ],
+    "codename": "view_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add enrolment",
+    "content_type": [
+      "General",
+      "enrolment"
+    ],
+    "codename": "add_enrolment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change enrolment",
+    "content_type": [
+      "General",
+      "enrolment"
+    ],
+    "codename": "change_enrolment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete enrolment",
+    "content_type": [
+      "General",
+      "enrolment"
+    ],
+    "codename": "delete_enrolment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view enrolment",
+    "content_type": [
+      "General",
+      "enrolment"
+    ],
+    "codename": "view_enrolment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Reporting",
+    "content_type": [
+      "General",
+      "reporting"
+    ],
+    "codename": "add_reporting"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Reporting",
+    "content_type": [
+      "General",
+      "reporting"
+    ],
+    "codename": "change_reporting"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Reporting",
+    "content_type": [
+      "General",
+      "reporting"
+    ],
+    "codename": "delete_reporting"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Reporting",
+    "content_type": [
+      "General",
+      "reporting"
+    ],
+    "codename": "view_reporting"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$nHBCDCDz6Y1HqE65ouMiyr$8aSEPIy6XXzdp1xCHJD7q7NmJXM42ejOAFbJeBp0bXM=",
+    "last_login": "2025-02-01T00:51:18Z",
+    "is_superuser": true,
+    "username": "pri",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-01-29T21:17:23Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$RLIwLaqYnwltT0wWzCyR1j$usrgi7pccXQbqHf2WAGmiQKpXu+uopZwgigsGwtPI/8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "adwait_khunal",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-01T00:52:01Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$IvMYvG6Ubsqnw54B7Ix5LI$ZWZLVwNpOP0rgr3itu5hiQp1OmxjAUro6rxRiNQ04x8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "timelia_",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-01T00:55:18Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$VsZkzUr6T2xvy44nIWZZeA$MZVL3oJ+K7Ga13nlwJJ65pE/gdhz14SPwxAeav7YVqI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sameer_haq",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-01T01:12:33Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$ZBd2v7hXuIelm8JgNWey5S$DgA8Aap8kF9/bhPS8ebpr9WR0sDmgKLZAd4Yztoq5dQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ryan_grech",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-01T01:16:47.657Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$yDa7smoPvHWiNNI2Io0jWl$87rnrabAKEwIS87YNQbZ/0gLdGq5aHUWLpxVUNGx/VA=",
+    "last_login": "2025-02-02T02:01:14.819Z",
+    "is_superuser": true,
+    "username": "taha",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-02-02T02:00:59.226Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$iq5Dn8MTI7M4yph7iI3wUn$cPfPPXP1AWeuGlv1rK/soTUrDPDu2Op2GZY5n1cNp8w=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "nusrat_spawn",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-02T02:04:02.417Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$GsmeK5Vv9vpakJU1WwZXam$Soww1nSErWd9hq+ZtWKAxUewJByHJUvYimor50hXw+g=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "caitlyn",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-03T02:26:24.413Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$0aj7XVvSXc3snZjRy2b5fn$k0aIfSk7oKuG69QPR76vYMaRlM+IxYchXgjrNUDveZA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Aryan",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-03T02:27:28.699Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "General.tutor",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "adwait_khunal"
+    ]
+  }
+},
+{
+  "model": "General.tutor",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "sameer_haq"
+    ]
+  }
+},
+{
+  "model": "General.tutor",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "taha"
+    ]
+  }
+},
+{
+  "model": "General.tutor",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "pri"
+    ]
+  }
+},
+{
+  "model": "General.student",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "timelia_"
+    ],
+    "join_date": "2025-01-30T02:00:00Z",
+    "exit_date": null
+  }
+},
+{
+  "model": "General.student",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "ryan_grech"
+    ],
+    "join_date": "2025-01-18T12:00:00Z",
+    "exit_date": null
+  }
+},
+{
+  "model": "General.student",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "nusrat_spawn"
+    ],
+    "join_date": "2025-02-02T02:04:08Z",
+    "exit_date": null
+  }
+},
+{
+  "model": "General.student",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "caitlyn"
+    ],
+    "join_date": "2025-02-03T02:26:31Z",
+    "exit_date": null
+  }
+},
+{
+  "model": "General.student",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "Aryan"
+    ],
+    "join_date": "2025-02-03T02:27:32Z",
+    "exit_date": null
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-01-29T21:59:25.541Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "1",
+    "object_repr": "Student object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-02-01T00:52:01.657Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "khunal.adwait@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-02-01T00:52:16.996Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "object_id": "1",
+    "object_repr": "khunal.adwait@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"availability\", \"object\": \"Availability for khunal.adwait@gmail.com on Monday\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-02-01T00:54:59.848Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "1",
+    "object_repr": "pri",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-02-01T00:55:19.201Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "timelia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-02-01T00:55:24.189Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "2",
+    "object_repr": "timelia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-02-01T01:06:41.972Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "A (12 - Mathematics Advanced - Private Lessons)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"enrolment\", \"object\": \"Enrolment object (1)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-02-01T01:07:29.158Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "A (12 - Mathematics Advanced - Private Lessons)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-02-01T01:08:49.435Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "A (12 - Mathematics Advanced - Private Lessons)",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"lesson\", \"object\": \"Lesson object (1)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-02-01T01:09:11.714Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "A (12 - Mathematics Advanced - Private Lessons)",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"attendance\", \"object\": \"Attendance object (1)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-02-01T01:11:43.595Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "A (12 - Mathematics Advanced - Private Lessons)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"lesson\", \"object\": \"Lesson object (1)\", \"fields\": [\"DateTime\", \"Comments\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-02-01T01:12:33.997Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "sameer.haq2003@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-02-01T01:12:42.323Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "object_id": "2",
+    "object_repr": "sameer.haq2003@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-02-01T01:16:47.900Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "ryan_grech",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-02-01T01:16:50.546Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "3",
+    "object_repr": "ryan_grech",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-02-01T01:17:01.305Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "adwait_khunal",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-02-01T01:17:10.777Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "pri",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-02-01T01:17:16.277Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "timelia_",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-02-01T01:17:22.980Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "sameer_haq",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-02-01T01:18:45.814Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"lesson\", \"object\": \"Lesson object (2)\"}}, {\"added\": {\"name\": \"attendance\", \"object\": \"Attendance object (2)\"}}, {\"added\": {\"name\": \"enrolment\", \"object\": \"Enrolment object (2)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-02-01T01:21:55.998Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"lesson\", \"object\": \"Lesson object (3)\"}}, {\"added\": {\"name\": \"lesson\", \"object\": \"Lesson object (4)\"}}, {\"added\": {\"name\": \"attendance\", \"object\": \"Attendance object (3)\"}}, {\"added\": {\"name\": \"attendance\", \"object\": \"Attendance object (4)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-02-01T02:04:54.903Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-02-01T02:05:54.320Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-02-01T02:48:14.598Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"attendance\", \"object\": \"ryan_grech - Group: 3 - Junior Mathematics - Private Lessons - Tutor: sameer_haq - 2025-01-26 02:00 - Paid (Attendance)\", \"fields\": [\"Trial\"]}}, {\"changed\": {\"name\": \"attendance\", \"object\": \"ryan_grech - Group: 3 - Junior Mathematics - Private Lessons - Tutor: sameer_haq - 2025-01-16 12:00 - Paid (Attendance)\", \"fields\": [\"Trial\"]}}, {\"changed\": {\"name\": \"attendance\", \"object\": \"ryan_grech - Group: 3 - Junior Mathematics - Private Lessons - Tutor: sameer_haq - 2025-02-09 12:00 - Paid (Attendance)\", \"fields\": [\"Trial\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-02-01T02:48:33.742Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "12 - Mathematics Advanced - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Notes\"]}}, {\"changed\": {\"name\": \"attendance\", \"object\": \"timelia_ - Group: 12 - Mathematics Advanced - Private Lessons - Tutor: adwait_khunal - 2025-01-31 02:00 - Now (Attendance)\", \"fields\": [\"Trial\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-02-01T03:12:48.807Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "reporting"
+    ],
+    "object_id": "1",
+    "object_repr": "Reporting object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-02-01T03:50:06.203Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "3",
+    "object_repr": "ryan_grech",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Join date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-02-01T03:50:36.470Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "2",
+    "object_repr": "timelia_",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Join date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-02-02T02:02:20.121Z",
+    "user": [
+      "taha"
+    ],
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "object_id": "3",
+    "object_repr": "taha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"availability\", \"object\": \"Availability for taha on Thursday\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-02-02T02:04:02.662Z",
+    "user": [
+      "taha"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "nusrat_spawn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-02-02T02:04:10.868Z",
+    "user": [
+      "taha"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "4",
+    "object_repr": "nusrat_spawn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-02-02T02:04:25.937Z",
+    "user": [
+      "taha"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "3",
+    "object_repr": "Selective - Other - Private Lessons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"enrolment\", \"object\": \"Enrolment object (3)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-02-02T02:08:15.616Z",
+    "user": [
+      "taha"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"lesson\", \"object\": \"Group: 3 - Junior Mathematics - Private Lessons - Tutor: sameer_haq - 2025-02-02 02:07 - Completed\"}}, {\"added\": {\"name\": \"attendance\", \"object\": \"ryan_grech - Group: 3 - Junior Mathematics - Private Lessons - Tutor: sameer_haq - 2025-02-02 02:07 - Completed (Attendance)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-02-03T00:37:55.125Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "3 - Junior Mathematics - Private Lessons",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"attendance\", \"object\": \"ryan_grech - Group: 3 - Junior Mathematics - Private Lessons - Tutor: sameer_haq - 2025-02-02 02:07 - Completed (Attendance)\", \"fields\": [\"Trial\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-02-03T02:25:32.618Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "tutor"
+    ],
+    "object_id": "4",
+    "object_repr": "pri",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-02-03T02:26:24.653Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "caitlyn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-02-03T02:26:33.328Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "5",
+    "object_repr": "caitlyn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-02-03T02:26:43.951Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "4",
+    "object_repr": "11 - Mathematics Advanced - Private Lessons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"enrolment\", \"object\": \"Enrolment object (4)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-02-03T02:27:28.941Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "9",
+    "object_repr": "Aryan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-02-03T02:27:33.169Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "student"
+    ],
+    "object_id": "6",
+    "object_repr": "Aryan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-02-03T02:27:42.875Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "5",
+    "object_repr": "11 - Mathematics Advanced - Private Lessons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"enrolment\", \"object\": \"Enrolment object (5)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-02-03T02:29:29.098Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "3",
+    "object_repr": "Selective - Other - Private Lessons",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-02-03T02:29:29.098Z",
+    "user": [
+      "pri"
+    ],
+    "content_type": [
+      "General",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "12 - Mathematics Advanced - Private Lessons",
+    "action_flag": 3,
+    "change_message": ""
+  }
+}
+]

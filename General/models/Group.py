@@ -44,7 +44,10 @@ class Group(models.Model):
     notes = models.TextField()
 
     def __str__(self):
-        return f"{self.get_year_display()} - {self.get_subject_display()} - {self.get_lesson_type_display()}"
+        students = []
+        for enrolment in self.enrolments.all():
+            students.append(str(enrolment.student))
+        return f"{self.get_year_display()} - {self.get_subject_display()} - {self.get_lesson_type_display()} - {students}"
 
     @property
     def estimatedProfit(self):

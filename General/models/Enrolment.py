@@ -5,7 +5,7 @@ from General.models.Group import Group
 from General.models.Student import Student
 
 class Enrolment(models.Model):
-    group = models.ForeignKey(Group, related_name="enrolments", on_delete=models.PROTECT)
-    student = models.ForeignKey(Student, related_name="enrolments", on_delete=models.PROTECT)
+    group = models.ForeignKey(Group, related_name="enrolments", on_delete=models.CASCADE)
+    student = models.ForeignKey(Student, related_name="enrolments", on_delete=models.CASCADE)
     enrolmentCost = models.FloatField()
 
