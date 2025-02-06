@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Tutor(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="tutor")
 
     def __str__(self):
         return self.user.username

@@ -1,0 +1,109 @@
+.class-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.class-title {
+    font-family: Poppins-Bold, sans-serif;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.class-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tutor-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tutor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.lesson-history {
+    list-style: none;
+    padding: 0;
+}
+
+.lesson-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.active {
+    background: #57b846;
+}
+
+.upcoming {
+    background: #ffc107;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* Attendance Modal Styles */
+.attendance-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.form-check {
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.lesson-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+.fab {
+    transition: all 0.3s ease;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}

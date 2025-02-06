@@ -1,0 +1,24 @@
+.dashboard-nav {
+    background: linear-gradient(-135deg, #004aad,#c850c0);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.nav-brand {
+    font-family: Montserrat-Bold, sans-serif;
+    color: white !important;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+}

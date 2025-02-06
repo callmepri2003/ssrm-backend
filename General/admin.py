@@ -2,7 +2,7 @@ from django.contrib import admin
 import nested_admin
 
 from General.models.Attendance import Attendance
-from General.models.Group import Group
+from General.models.Group import Group, When
 from General.models.Lesson import Lesson
 from General.models.Reporting import Reporting
 from General.models.Resource import Resource
@@ -36,19 +36,26 @@ class AvailabilityInline(nested_admin.NestedTabularInline):
     model = Availability
     extra = 1
 
-# 4. Group Admin (Contains Lesson & Resource)
+class WhenInline(nested_admin.NestedTabularInline):  # ✅ Use NestedTabularInline for compatibility
+    model = When
+    extra = 1  # Allows adding new schedule entries directly from the Group admin page
+
 @admin.register(Group)
 class GroupAdmin(nested_admin.NestedModelAdmin):
-    inlines = [ResourceInline, LessonInline, EnrolmentInline]  # ✅ Nest Lesson (which contains Attendance)
+    inlines = [WhenInline, ResourceInline, LessonInline, EnrolmentInline]  
 
-    list_display = ('__str__','estimatedProfit',)
+    list_display = ('__str__', 'estimatedProfit', 'schedule_summary')
     readonly_fields = ('estimatedProfit',)
 
     def estimatedProfit(self, obj):
         return f"${obj.estimatedProfit:.2f}"
 
-    
     estimatedProfit.short_description = "Estimated Profit"
+
+    def schedule_summary(self, obj):
+        return ", ".join([str(when) for when in obj.schedules.all()]) or "No Schedule"
+
+    schedule_summary.short_description = "Schedule"
 
 # 6. Tutor Admin
 @admin.register(Tutor)

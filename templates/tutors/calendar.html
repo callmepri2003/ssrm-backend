@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Calendar</title>
+    <link rel='stylesheet' type='text/css' href='{% static "css/calendar.css" %}'/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts.css' %}">
+</head>
+<body>
+    <!-- Navigation -->
+    {% include 'partials/navbar.html' %}
+
+    <div class="calendar-container">
+        <h1 id="month-year"></h1>
+        <p>Your scheduled classes and events</p>
+        <ul id="calendar-grid"></ul>
+    </div>
+
+    <script>
+        // Calendar Configuration
+        const events = [
+            { date: '2025-11-03', title: 'Advanced Maths', time: '3:00 PM' },
+            { date: '2025-11-05', title: 'Physics Lab', time: '5:00 PM' },
+            { date: '2025-02-01', title: 'Chemistry Review', time: '2:00 PM' }
+        ];
+
+        // Get current date information
+        const now = new Date();
+        const currentMonth = now.getMonth();
+        const currentYear = now.getFullYear();
+        const today = now.getDate();
+
+        // Set month and year in header
+        document.getElementById('month-year').textContent = 
+            new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(now);
+
+        // Generate calendar
+        function generateCalendar(month, year) {
+            const calendarGrid = document.getElementById('calendar-grid');
+            calendarGrid.innerHTML = '';
+
+            // Get first day of month and number of days
+            const firstDay = new Date(year, month, 1);
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const startingDay = firstDay.getDay();
+
+            // Add empty days for previous month
+            for (let i = 0; i < startingDay; i++) {
+                const li = document.createElement('li');
+                li.classList.add('empty');
+                calendarGrid.appendChild(li);
+            }
+
+            // Add days of current month
+            for (let day = 1; day <= daysInMonth; day++) {
+                const li = document.createElement('li');
+                if (day === today) {
+                    li.classList.add('today');
+                }
+
+                const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                li.innerHTML = `<time datetime="${dateString}">${day}</time>`;
+
+                // Add events for this day
+                const dayEvents = events.filter(event => event.date === dateString);
+                dayEvents.forEach(event => {
+                    const eventDiv = document.createElement('div');
+                    eventDiv.classList.add('event');
+                    eventDiv.textContent = `${event.time} - ${event.title}`;
+                    li.appendChild(eventDiv);
+                });
+
+                calendarGrid.appendChild(li);
+            }
+        }
+
+        // Add event function
+        function addEvent(date, title, time) {
+            events.push({ date, title, time });
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        // Initialize calendar
+        generateCalendar(currentMonth, currentYear);
+
+        // Example of adding a new event
+        addEvent('2023-11-10', 'New Class', '10:00 AM');
+    </script>
+</body>
+</html>

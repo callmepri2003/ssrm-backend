@@ -1,23 +1,25 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 from General.models.Tutor import Tutor
+from django.utils.translation import gettext_lazy as _
 
 class Group(models.Model):
     YEAR_CHOICES = [
-        ('K', 'K'),
-        ('1', '1'),
-        ('2', '2'),
-        ('3', '3'),
-        ('4', '4'),
-        ('5', '5'),
-        ('6', '6'),
-        ('7', '7'),
-        ('8', '8'),
-        ('9', '9'),
-        ('10', '10'),
-        ('11', '11'),
-        ('12', '12'),
+        ('K', 'Kindergarten'),
+        ('1', 'Year 1'),
+        ('2', 'Year 2'),
+        ('3', 'Year 3'),
+        ('4', 'Year 4'),
+        ('5', 'Year 5'),
+        ('6', 'Year 6'),
+        ('7', 'Year 7'),
+        ('8', 'Year 8'),
+        ('9', 'Year 9'),
+        ('10', 'Year 10'),
+        ('11', 'Year 11'),
+        ('12', 'Year 12'),
         ('S', 'Selective'),
     ]
 
@@ -60,4 +62,33 @@ class Group(models.Model):
 
     def enrolStudent():
         ...
-    
+
+class When(models.Model):
+    DAY_CHOICES = [
+        ('Mon', 'Monday'),
+        ('Tue', 'Tuesday'),
+        ('Wed', 'Wednesday'),
+        ('Thu', 'Thursday'),
+        ('Fri', 'Friday'),
+        ('Sat', 'Saturday'),
+        ('Sun', 'Sunday'),
+    ]
+
+    TIME_CHOICES = [
+        (f"{hour:02d}:{minute:02d}", f"{hour:02d}:{minute:02d}")
+        for hour in range(7, 22)  # 7 AM to 9 PM
+        for minute in (0, 15, 30, 45)  # 15-minute intervals
+    ]
+
+    day = models.CharField(max_length=3, choices=DAY_CHOICES)
+    time = models.CharField(max_length=5, choices=TIME_CHOICES)
+    length_hours = models.IntegerField()
+    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='schedules')
+
+
+    class Meta:
+        verbose_name = _("Schedule")
+        verbose_name_plural = _("Schedules")
+
+    def __str__(self):
+        return f"{self.get_day_display()} at {self.time}"
